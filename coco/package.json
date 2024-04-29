@@ -37,6 +37,7 @@
     "js-md5": "^0.8.3",
     "lodash": "^4.17.21",
     "ngx-socket-io": "^4.6.1",
+    "pdfmake": "^0.2.10",
     "primeicons": "^7.0.0",
     "primeng": "^17.13.0",
     "rxjs": "~7.8.0",

@@ -3,10 +3,7 @@ import { ReservationColocServiceService } from '../reservation-coloc-service.ser
 import { AnnonceColocService } from '../../annoceColoc/annonce-coloc.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ServiceService } from '../../login/services/service.service';
-import pdfMake from 'pdfmake/build/pdfmake';
-import pdfFonts from 'pdfmake/build/vfs_fonts';
 
-pdfMake.vfs = pdfFonts.pdfMake.vfs;
 @Component({
   selector: 'app-create-reservation-coloc',
   templateUrl: './create-reservation-coloc.component.html',
