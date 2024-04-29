@@ -96,15 +96,10 @@ export class LoginComponent implements OnInit  {
         // Rediriger vers la page /dashboard
         this.router.navigateByUrl('/back');
       } 
-<<<<<<< Updated upstream
       else if (this.email === 'yassine@gmail.com'){
-        // Rediriger vers la page /preferences pour les autres utilisateurs
-=======
-       else if (this.email === 'yassine@gmail.com') {
-        // Redirect to a specific page for another email
->>>>>>> Stashed changes
         this.router.navigateByUrl('/backk');
-      }else {
+
+       }else {
         // Rediriger vers la page /preferences pour les autres utilisateurs
         this.router.navigateByUrl('/preferances');
       }
