@@ -24,3 +24,17 @@ server:
 cors:
   authorized:
     client: "*"
+# Google Maps API Key
+google:
+  maps:
+    apiKey: AIzaSyAaFViO2_OJutNTQczF4fFzSue10WPB3HQ
+
+# Kafka Configuration
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: my-group
+      auto-offset-reset: earliest
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
