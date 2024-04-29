@@ -1,5 +1,6 @@
 package com.example.testeditions.Repositories;
 
+import com.example.testeditions.Entites.Profil;
 import com.example.testeditions.Entites.User;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.EntityGraph;
@@ -31,7 +32,7 @@ public interface UserRepository extends JpaRepository<User,Long> {
 
     Optional<User> findOneByEmail(String email);
 
-
+    Optional<User> findByProfil(Profil profile);
 
 
     @Transactional
