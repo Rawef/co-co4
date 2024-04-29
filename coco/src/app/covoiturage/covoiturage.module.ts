@@ -11,7 +11,6 @@ import { DetailedAnnonceComponent } from './components/detailed-annonce/detailed
 import { MesannoncesComponent } from './components/mesannonces/mesannonces.component';
 import { ReservationComponent } from './components/reservation/reservation.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { BackannonceComponent } from './components/backannonce/backannonce.component';
 import { BackupdateannonceComponent } from './components/backupdateannonce/backupdateannonce.component';
 import { UpdateannonceComponent } from './components/updateannonce/updateannonce.component';
@@ -36,7 +35,6 @@ import { DashboardsComponent } from './components/dashboards/dashboards.componen
     MesannoncesComponent,
     DetailedAnnonceComponent,
     ReservationComponent,
-    DashboardComponent,
     BackannonceComponent,
     BackupdateannonceComponent,
     UpdateannonceComponent,
@@ -68,7 +66,7 @@ import { DashboardsComponent } from './components/dashboards/dashboards.componen
     MesannoncesComponent,
     DetailedAnnonceComponent,
     ReservationComponent,
-    DashboardComponent,
+    DashboardsComponent,
     BackannonceComponent,
     BackupdateannonceComponent,
     UpdateannonceComponent,
