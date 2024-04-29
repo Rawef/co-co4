@@ -95,7 +95,11 @@ export class LoginComponent implements OnInit  {
       if (this.email === 'rawef31@gmail.com') {
         // Rediriger vers la page /dashboard
         this.router.navigateByUrl('/back');
-      } else {
+      } 
+      else if (this.email === 'yassine@gmail.com'){
+        // Rediriger vers la page /preferences pour les autres utilisateurs
+        this.router.navigateByUrl('/backk');
+      }else {
         // Rediriger vers la page /preferences pour les autres utilisateurs
         this.router.navigateByUrl('/preferances');
       }
