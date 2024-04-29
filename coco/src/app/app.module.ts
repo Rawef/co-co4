@@ -28,6 +28,7 @@ import { MesAnnoncesComponent } from './annoceColoc/mes-annonces/mes-annonces.co
 import { AnnoceColocViewComponent } from './annoceColoc/annoce-coloc-view/annoce-coloc-view.component';
 import { UpdateAnnonceColocComponent } from './annoceColoc/update-annonce-coloc/update-annonce-coloc.component';
 import { CreateReservationColocComponent } from './reservation/create-reservation-coloc/create-reservation-coloc.component';
+import { CovoiturageModule } from './covoiturage/covoiturage.module';
 
 
 const config: SocketIoConfig = { url: 'http://localhost:8089 ', options: {} };
@@ -46,6 +47,7 @@ const config: SocketIoConfig = { url: 'http://localhost:8089 ', options: {} };
     CreateReservationColocComponent,
     
     
+    
   ],
   imports: [
     BrowserModule,
@@ -60,6 +62,8 @@ const config: SocketIoConfig = { url: 'http://localhost:8089 ', options: {} };
     AboutusModule,
     BackofficeModule,
     MessagesModule,
+    CovoiturageModule,
+
     ButtonModule,
     ChatModule,
     SocketIoModule.forRoot(config),
