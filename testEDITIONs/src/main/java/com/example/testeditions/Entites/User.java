@@ -74,11 +74,15 @@ public class User {
     @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL, mappedBy="user")
     private List<Post> Posts;
-
+    @JsonIgnore
+    @OneToMany(cascade = CascadeType.ALL, mappedBy="user")
+    private List<Likee> Likees;
     @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL, mappedBy="user")
     private List<Subscription> subscriptions;
-
+    @JsonIgnore
+    @OneToMany(cascade = CascadeType.ALL, mappedBy="user")
+    private List<Profil> profil;
 
     public boolean isVerified() {
         return verified;
