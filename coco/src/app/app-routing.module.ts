@@ -38,6 +38,13 @@ import { BackcommentComponent } from './covoiturage/components/backcomment/backc
 import { NotificationComponent } from './covoiturage/components/notification/notification.component';
 import { StatisComponent } from './covoiturage/components/statis/statis.component';
 import { DashboardsComponent } from './covoiturage/components/dashboards/dashboards.component';
+import { AfficherpostComponent } from './forum/components/afficherpost/afficherpost.component';
+import { ConsulterComponent } from './reclamation/components/consulter/consulter.component';
+import { CreateprofileComponent } from './tinder/createprofile/createprofile.component';
+import { TinderComponent } from './tinder/tinder/tinder.component';
+import { PostComponent } from './forum/components/post/post.component';
+import { AfficherComponent } from './reclamation/components/afficher/afficher.component';
+import { AjoutComponent } from './reclamation/components/ajout/ajout.component';
 
 const routes: Routes = [
 
@@ -76,9 +83,15 @@ const routes: Routes = [
   { path: "buvoiture/:idv", component:BackupdatevoitureComponent},   
   { path: "bcomment", component:BackcommentComponent},                 
   { path: "not", component:NotificationComponent},                    
-  { path: "stat", component:StatisComponent},    
-
+  { path: "stat", component:StatisComponent},
+  {path:"affichpost" , component:AfficherpostComponent},
+  {path:"consult" , component:ConsulterComponent},
+  {path:"tinder" , component:TinderComponent},
+  {path:"create" , component:CreateprofileComponent},
   {path:"aboutus" , component:StatsComponent},
+  {path:"ajoutrecl" , component:AjoutComponent},
+  {path:"affichrecl" , component:AfficherComponent},
+  {path:"ajoutpost" , component:PostComponent},
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   {path:"preferances" , component:PreferancesComponent},
   //{path:"**",redirectTo:"home" ,pathMatch:"full"} 

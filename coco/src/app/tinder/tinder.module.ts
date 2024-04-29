@@ -4,7 +4,6 @@ import { TinderComponent } from './tinder/tinder.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { style } from '@angular/animations';
-import { IonicModule } from '@ionic/angular';
 import { CreateprofileComponent } from './createprofile/createprofile.component';
 @NgModule({
   declarations: [
@@ -18,7 +17,6 @@ import { CreateprofileComponent } from './createprofile/createprofile.component'
     FormsModule,
     BrowserModule,
     HammerModule,
-    IonicModule.forRoot()
 
   ],
   exports: [TinderComponent,

@@ -1,8 +1,8 @@
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy } from '@angular/core';
 import { AjoutService } from './../../service/ajout.service';
+import { Chart, registerables } from 'chart.js/auto';
 import { jsPDF } from 'jspdf';
 import 'jspdf-autotable';
-import { Chart, registerables } from 'chart.js/auto';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MailgunService } from './../../service/mailservice.service';
 import { Subscription } from 'rxjs';

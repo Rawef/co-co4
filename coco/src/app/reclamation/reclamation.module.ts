@@ -1,11 +1,11 @@
-import { ToastrModule } from 'ngx-toastr';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AjoutComponent } from './components/ajout/ajout.component';
 import { AfficherComponent } from './components/afficher/afficher.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToastrService } from 'ngx-toastr';
+
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -36,7 +36,6 @@ import { ChatbotComponent } from './components/chatbot/chatbot.component';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot(),
     MatSnackBarModule,
     MatButtonModule,
     MatInputModule,

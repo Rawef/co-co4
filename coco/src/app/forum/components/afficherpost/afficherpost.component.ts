@@ -3,7 +3,6 @@ import { ServiceforumService } from '../../service/serviceforum.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { CommentAnalysis } from '../../../shared/model/analyse.comment';
 
 @Component({
   selector: 'app-afficherpost',
