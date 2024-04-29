@@ -16,13 +16,18 @@ import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 import { AboutusModule } from './aboutus/aboutus.module';
 import { AuthConfig, OAuthModule } from 'angular-oauth2-oidc';
 import { BackofficeModule } from './backoffice/backoffice.module';
-import { ColocationModule } from './colocation/colocation.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { MessagesModule } from 'primeng/messages';
 import { ButtonModule } from 'primeng/button';
 import { CommonModule } from '@angular/common';
 import { ChatModule } from './chat/chat.module';
 import { ShellComponent } from './shell/shell.component';
+import { AnnonceColocListComponent } from './annoceColoc/annonce-coloc-list/annonce-coloc-list.component';
+import { CreateAnnonceColocComponent } from './annoceColoc/create-annonce-coloc/create-annonce-coloc.component';
+import { MesAnnoncesComponent } from './annoceColoc/mes-annonces/mes-annonces.component';
+import { AnnoceColocViewComponent } from './annoceColoc/annoce-coloc-view/annoce-coloc-view.component';
+import { UpdateAnnonceColocComponent } from './annoceColoc/update-annonce-coloc/update-annonce-coloc.component';
+import { CreateReservationColocComponent } from './reservation/create-reservation-coloc/create-reservation-coloc.component';
 
 
 const config: SocketIoConfig = { url: 'http://localhost:8089 ', options: {} };
@@ -33,6 +38,12 @@ const config: SocketIoConfig = { url: 'http://localhost:8089 ', options: {} };
   declarations: [
     AppComponent,
     ShellComponent,
+    AnnonceColocListComponent,
+    CreateAnnonceColocComponent,
+    MesAnnoncesComponent,
+    AnnoceColocViewComponent,
+    UpdateAnnonceColocComponent,
+    CreateReservationColocComponent,
     
     
   ],
@@ -56,6 +67,8 @@ const config: SocketIoConfig = { url: 'http://localhost:8089 ', options: {} };
     OAuthModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
+      ReactiveFormsModule,  // Importez ReactiveFormsModule ici
+    RouterModule.forRoot([]), // Configuration de RouterModule dans AppModule
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'

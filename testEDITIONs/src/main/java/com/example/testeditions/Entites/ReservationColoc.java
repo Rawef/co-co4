@@ -1,6 +1,6 @@
 package com.example.testeditions.Entites;
 
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -19,5 +19,9 @@ public class ReservationColoc {
     private Date date;
     @ManyToOne
     AnnonceColocation annoncecolocation;
+    @ManyToOne
+    User user;
+
+
 
 }
