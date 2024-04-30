@@ -1,0 +1,24 @@
+<!-- <div class="order-management-container">
+  <h2>Gestion des Commandes</h2>
+
+
+  <div class="search-bar">
+    <input type="text" placeholder="Rechercher par nom de client" [(ngModel)]="searchTerm" (input)="applyFilters()" />
+  </div>
+  <div class="order-list">
+    <div class="order-item" *ngFor="let commande of filteredCommandes">
+      <div class="order-details">
+        <h3>Commande #{{ commande.id }}</h3>
+        <p>Date: {{ commande.date | date: 'dd/MM/YYYY' }}</p>
+        <p>Client: {{ commande.utilisateur.name }}</p>
+       Articles:
+              <ul class="article-list">
+                <li *ngFor="let article of commande.articles">
+                  {{ article.nom }} (Quantité: {{ article.quantity }}) - {{ article.prix}} TND
+                </li>
+              </ul>
+        <p>Total: {{ calculateTotalPrice(commande) }} TND</p>
+      </div>
+    </div>
+  </div>
+</div> -->
