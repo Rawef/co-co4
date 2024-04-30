@@ -50,6 +50,11 @@ import { ScheduleComponent } from './certi/schedule/schedule.component';
 import { CalendrierComponent } from './eventt/calendrier/calendrier.component';
 import { TicketComponent } from './eventt/ticket/ticket.component';
 import { EventComponent } from './eventt/event.component';
+import { AddAnnoncesComponent } from './user-airbnb/add-annonces/add-annonces.component';
+import { AnnoncesComponent } from './user-airbnb/annonces/annonces.component';
+import { CartComponent } from './user-airbnb/cart/cart.component';
+import { PaimementComponent } from './user-airbnb/paimement/paimement.component';
+import { ShopComponent } from './user-airbnb/shop/shop.component';
 
 const routes: Routes = [
 
@@ -104,6 +109,17 @@ const routes: Routes = [
   {path :"certification" , component: CertificationComponent},
   {path :"schedule" , component: ScheduleComponent},
   { path: 'event', component: EventComponent },
+  {path:"ajouter-annonce" , component:AddAnnoncesComponent},
+  {path:"annonces" , component:AnnoncesComponent},
+  {path:"shop" , component:ShopComponent},
+  {path:"cart" , component:CartComponent},
+  {path:"paiement" , component:PaimementComponent},
+
+  { path: 'reservation/:id', component: ReservationComponent },
+
+  { path: 'admin', loadChildren: () => import('./admin-airbnb/admin-airbnb.module').then(m => m.AdminAirbnbModule) },
+
+  {path:"**",redirectTo:"home" ,pathMatch:"full"} 
   //{path:"**",redirectTo:"home" ,pathMatch:"full"} 
 
   

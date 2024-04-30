@@ -25,6 +25,7 @@
     "@angular/router": "^17.1.0",
     "@angular/service-worker": "^17.1.0",
     "@angular/ssr": "^17.1.0",
+    "@ng-bootstrap/ng-bootstrap": "^16.0.0",
     "@popperjs/core": "^2.11.8",
     "@stomp/ng2-stompjs": "^8.0.0",
     "@stomp/stompjs": "^7.0.0",

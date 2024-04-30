@@ -35,6 +35,17 @@ import { ForumModule } from './forum/forum.module';
 import { EventtModule } from './eventt/eventt.module';
 import { CertiModule } from './certi/certi.module';
 import { GoogleMap } from '@angular/google-maps';
+import { AddAnnoncesComponent } from './user-airbnb/add-annonces/add-annonces.component';
+import { AnnoncesComponent } from './user-airbnb/annonces/annonces.component';
+import { CartComponent } from './user-airbnb/cart/cart.component';
+import { PaimementComponent } from './user-airbnb/paimement/paimement.component';
+import { ReservationComponent } from './user-airbnb/reservation/reservation.component';
+import { ShopComponent } from './user-airbnb/shop/shop.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 const config: SocketIoConfig = { url: 'http://localhost:8089 ', options: {} };
@@ -51,6 +62,12 @@ const config: SocketIoConfig = { url: 'http://localhost:8089 ', options: {} };
     AnnoceColocViewComponent,
     UpdateAnnonceColocComponent,
     CreateReservationColocComponent,
+    AddAnnoncesComponent,
+    AnnoncesComponent,
+    ReservationComponent,
+    ShopComponent,
+    CartComponent,
+    PaimementComponent,
     
     
     
@@ -77,6 +94,12 @@ const config: SocketIoConfig = { url: 'http://localhost:8089 ', options: {} };
     GoogleMap,
     ForumModule,
     ButtonModule,
+    NgbModule,
+    MatSnackBarModule,
+    RouterModule,
+    ReactiveFormsModule,
+    ModalModule.forRoot(),
+    BrowserAnimationsModule,
     ChatModule,
     SocketIoModule.forRoot(config),
     OAuthModule.forRoot(),
@@ -97,6 +120,7 @@ const config: SocketIoConfig = { url: 'http://localhost:8089 ', options: {} };
   ],
   providers: [
     provideClientHydration(),
+  
     
    
   ],
