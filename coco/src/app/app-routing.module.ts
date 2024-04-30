@@ -45,6 +45,11 @@ import { TinderComponent } from './tinder/tinder/tinder.component';
 import { PostComponent } from './forum/components/post/post.component';
 import { AfficherComponent } from './reclamation/components/afficher/afficher.component';
 import { AjoutComponent } from './reclamation/components/ajout/ajout.component';
+import { CertificationComponent } from './certi/certification/certification.component';
+import { ScheduleComponent } from './certi/schedule/schedule.component';
+import { CalendrierComponent } from './eventt/calendrier/calendrier.component';
+import { TicketComponent } from './eventt/ticket/ticket.component';
+import { EventComponent } from './eventt/event.component';
 
 const routes: Routes = [
 
@@ -94,6 +99,11 @@ const routes: Routes = [
   {path:"ajoutpost" , component:PostComponent},
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   {path:"preferances" , component:PreferancesComponent},
+  {path :"ticket",  component:TicketComponent},
+  {path :"calendrier" , component: CalendrierComponent},
+  {path :"certification" , component: CertificationComponent},
+  {path :"schedule" , component: ScheduleComponent},
+  { path: 'event', component: EventComponent },
   //{path:"**",redirectTo:"home" ,pathMatch:"full"} 
 
   

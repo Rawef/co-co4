@@ -32,6 +32,9 @@ import { CovoiturageModule } from './covoiturage/covoiturage.module';
 import { TinderModule } from './tinder/tinder.module';
 import { ReclamationModule } from './reclamation/reclamation.module';
 import { ForumModule } from './forum/forum.module';
+import { EventtModule } from './eventt/eventt.module';
+import { CertiModule } from './certi/certi.module';
+import { GoogleMap } from '@angular/google-maps';
 
 
 const config: SocketIoConfig = { url: 'http://localhost:8089 ', options: {} };
@@ -68,6 +71,10 @@ const config: SocketIoConfig = { url: 'http://localhost:8089 ', options: {} };
     CovoiturageModule,
     TinderModule,
     ReclamationModule,
+    EventtModule,
+    CertiModule,
+    TinderModule,
+    GoogleMap,
     ForumModule,
     ButtonModule,
     ChatModule,
