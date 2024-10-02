@@ -3,6 +3,8 @@ package com.example.testeditions.Config;
 import com.example.testeditions.Services.AnnonceCovImpl;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Component;
+
 
 @Component
 public class AnnouncementScheduler {
